@@ -1,0 +1,54 @@
+/**
+ * normalize.css の minimum 版として作成
+ */
+
+.article {
+  text-align: left;
+  color: #fff;
+
+  p {
+    padding-right: 16px;
+    color: #fff;
+  }
+
+  .post-detail {
+    h2 {
+      padding: 0.24em 0.48em;
+      margin: 8px 0;
+      color: #fff;
+      border-left: solid 5px #42b883;
+    }
+
+    h3 {
+      padding: 0.24em 0.48em;
+      margin: 8px 0;
+      color: #fff;
+      border-left: solid 5px #35495e;
+    }
+
+    h4 {
+      padding: 0.24em 0.48em;
+      margin: 8px 0;
+      color: #fff;
+      border-left: solid 5px #ccc;
+    }
+
+    img {
+      width: 60%;
+      margin: 0 10%;
+      @media (min-width: 768px) {
+        width: 80%;
+      }
+    }
+
+    iframe {
+      // width: 60%;
+      width: 56%;
+      margin: 0 10%;
+      @media (min-width: 768px) {
+        // width: 80%;
+        width: 78%;
+      }
+    }
+  }
+}

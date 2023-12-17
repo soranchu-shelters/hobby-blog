@@ -1,0 +1,73 @@
+---
+import BaseHead from '../components/BaseHead.astro'
+import BlogHeader from '../components/BlogHeader.astro'
+import BlogPost from '../components/BlogPost.astro'
+import SectionTitle from '../components/SectionTitle.astro'
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
+
+import '../assets/_article-min.scss'
+// import '../assets/lib/customize/_article.scss'
+import '../assets/lib/customize/_twitter.scss'
+import '../assets/lib/_layout.scss'
+import '../assets/player.scss'
+import '../assets/reset.scss'
+import '../assets/section.scss'
+import '../assets/summary.scss'
+
+const { content } = Astro.props
+const { lang, title, description, publishDate, author, heroImage, permalink, alt } = content
+---
+
+<html lang={lang || 'ja'}>
+  <head>
+    <BaseHead {title} {description} {permalink} />
+
+    <style is:global>
+      body {
+        padding: 0;
+        margin: 0;
+        /* rgba(167, 123, 243, 0.1) */
+        background: #000;
+        color: #fff;
+        user-select: none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+      }
+
+      a {
+        color: #42b883;
+      }
+
+      .article .post-detail h2,
+      .article .post-detail h3,
+      .article .post-detail h4,
+      .article .post-detail p,
+      .article .post-detail li,
+      .article .post-detail td,
+      .article .post-detail tr {
+        color: #fff;
+      }
+    </style>
+  </head>
+
+  <body>
+    <Header>
+      <BlogHeader {title} {description} />
+    </Header>
+    <SectionTitle title="Today Content" subtitle="今日のブログ記事" />
+    <div>
+      <BlogPost {title} {author} {heroImage} {publishDate} {alt}>
+        <div class="article">
+          <div class="post-detail">
+            <slot />
+          </div>
+        </div>
+      </BlogPost>
+    </div>
+    <Footer>
+      © 2021-2024 nekohack inc. some rights reserved.
+    </Footer>
+  </body>
+</html>

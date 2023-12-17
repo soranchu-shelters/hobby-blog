@@ -1,0 +1,52 @@
+---
+import { SEO } from 'astro-seo'
+
+export type Props = {
+  title: string
+  description: string
+  permalink: string
+  image: string
+}
+
+const {
+  title = 'soratabi.nekohack.me',
+  description,
+  permalink,
+  image = 'https://soratabi.nekohack.me/assets/top.jpg',
+} = Astro.props
+---
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>{title}</title>
+
+<SEO
+  charset="UTF-8"
+  title={title}
+  description={description}
+  openGraph={{
+    basic: {
+      type: "A type.",
+      title: title,
+      url: permalink,
+      ...image && { image: image },
+    }
+  }}
+  twitter={{
+    creator: "@jiyuujin_dev"
+  }}
+  extend={{
+    link: [
+      { rel: "icon", href: "/favicon.ico" },
+      // {
+      //   rel: "stylesheet",
+      //   href: "https://cdn.jsdelivr.net/npm/@nekohack/normalize.css/dist/index.css",
+      // },
+    ],
+    meta: [
+      { name: "twitter:title", content: title },
+      { name: "twitter:description", content: description },
+      { name: "twitter:image", content: image },
+    ],
+  }}
+/>

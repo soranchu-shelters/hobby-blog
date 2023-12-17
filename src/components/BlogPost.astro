@@ -1,0 +1,45 @@
+---
+export interface Props {
+  title: string
+  author: string
+  publishDate: string
+  heroImage: string
+  alt: string
+}
+
+const { title, author, image, alt } = Astro.props
+---
+
+<div class="content">
+  {image && <img width="720" height="420" class="hero-image" loading="lazy" src={image} alt={alt} />}
+  <slot />
+</div>
+
+<style>
+  .hero-image {
+    width: 100vw;
+    object-fit: cover;
+    object-position: center;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    max-width: 1280px;
+  }
+
+  @media (max-width: 50em) {
+    .hero-image {
+      height: 260px;
+      margin-top: 0;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+    margin-bottom: 8rem;
+  }
+</style>

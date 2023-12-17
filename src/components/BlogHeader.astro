@@ -1,0 +1,40 @@
+---
+const { title } = Astro.props
+---
+
+<div class="header">
+  <h1 class="latest">{title}</h1>
+</div>
+
+<style>
+  .latest {
+    text-align: center;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 12px 24px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  .header {
+    display: grid;
+    place-items: center;
+    height: 160px;
+    background: url(/assets/img/HND_Satellite.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-bottom: 1px solid var(--theme-divider);
+  }
+
+  .header > * {
+    margin: 0;
+  }
+
+  @media(min-width: 768px) {
+    .header {
+      height: 320px;
+    }
+  }
+</style>

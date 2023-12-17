@@ -1,0 +1,21 @@
+---
+
+---
+
+<div class="grid-content">
+  <slot />
+</div>
+
+<style>
+  .grid-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    background: #000;
+  }
+
+  @media(min-width: 768px) {
+    .grid-content {
+      padding: 8px 16px;
+    }
+  }
+</style>

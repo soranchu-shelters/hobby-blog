@@ -1,0 +1,14 @@
+version: 1
+rules:
+  - expected: Google
+    specs:
+      - from: google
+        to: Google
+  - expected: Widget
+    patterns:
+      - Widget
+      - ウィジェット
+  - expected: インタフェース
+    patterns:
+      - インターフェース
+      - インタフェース

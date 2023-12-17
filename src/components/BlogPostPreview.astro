@@ -1,0 +1,60 @@
+---
+import { Image } from 'astro:assets'
+
+export interface Props {
+  post: {
+    frontmatter: {
+      author: string
+      authorInstagram: string
+      category: string
+      title: string
+      type: string
+      date: string
+      tags: string[]
+      image: string
+    }
+  }
+}
+
+const { post } = Astro.props
+---
+
+<div class="item">
+  <a href={post.url}>
+    {post.frontmatter.image && (
+      <Image width="400" height="400" class="hero-image" loading="lazy" src={post.frontmatter.image} alt={post.frontmatter.title} />
+    )}
+  </a>
+</div>
+
+<style>
+  .hero-image {
+    padding: 0;
+    margin-top: 0;
+  }
+
+  @media(min-width: 768px) {
+    .hero-image {
+      padding: 0;
+      height: 400px;
+      margin: 0;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  .item {
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  p {
+    text-align: left;
+  }
+</style>
