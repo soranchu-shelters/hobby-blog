@@ -1,4 +1,5 @@
 ---
+import BlogArticle from '../components/BlogArticle.astro'
 import BaseHead from '../components/BaseHead.astro'
 import BlogHeader from '../components/BlogHeader.astro'
 import BlogPost from '../components/BlogPost.astro'
@@ -57,7 +58,7 @@ const { lang, title, description, publishDate, author, heroImage, permalink, alt
       <BlogHeader {title} {description} />
     </Header>
     <SectionTitle title="Today Content" subtitle="今日のブログ記事" />
-    <div>
+    <BlogArticle>
       <BlogPost {title} {author} {heroImage} {publishDate} {alt}>
         <div class="article">
           <div class="post-detail">
@@ -65,7 +66,7 @@ const { lang, title, description, publishDate, author, heroImage, permalink, alt
           </div>
         </div>
       </BlogPost>
-    </div>
+    </BlogArticle>
     <Footer>
       © 2021-2024 nekohack inc. some rights reserved.
     </Footer>

@@ -9,13 +9,8 @@
 <style>
   .grid-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 1em;
     background: #000;
-  }
-
-  @media(min-width: 768px) {
-    .grid-content {
-      padding: 8px 16px;
-    }
   }
 </style>
