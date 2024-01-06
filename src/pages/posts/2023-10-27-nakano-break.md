@@ -3,7 +3,7 @@ layout: '../../layouts/BlogPost.astro'
 author: jiyuujin
 authorInstagram: soranchu_liz
 category: aviation
-title: カメラマン業、束の間の休息
+title: 4 年ぶり「カメラマン業」として始動
 type: post
 date: 2023-10-27
 tags:
