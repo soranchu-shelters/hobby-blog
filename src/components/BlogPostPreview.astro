@@ -33,12 +33,14 @@ const { post } = Astro.props
     margin: 0;
     width: 400px;
     height: 400px;
+    object-fit: cover;
+    object-position: center;
   }
 
-  @media(min-width: 768px) {
+  @media(max-width: 767px) {
     .hero-image {
-      object-fit: cover;
-      object-position: center;
+      width: 200px;
+      height: 200px;
     }
   }
 
