@@ -4,14 +4,14 @@ import { SEO } from 'astro-seo'
 export type Props = {
   title: string
   description: string
-  permalink: string
-  image: string
+  permalink?: string
+  image?: string
 }
 
 const {
   title = 'soratabi.nekohack.me',
   description,
-  permalink,
+  permalink = 'https://soratabi.nekohack.me/',
   image = 'https://soratabi.nekohack.me/assets/top.jpg',
 } = Astro.props
 ---
