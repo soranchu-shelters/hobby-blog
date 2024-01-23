@@ -2,7 +2,7 @@
 import BlogArticle from '../components/BlogArticle.astro'
 import BaseHead from '../components/BaseHead.astro'
 import BlogHeader from '../components/BlogHeader.astro'
-import BlogPost from '../components/BlogPost.astro'
+import { default as BlogPostTemplate } from '../components/BlogPost.astro'
 import SectionTitle from '../components/SectionTitle.astro'
 import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
@@ -17,7 +17,7 @@ import '../assets/section.scss'
 import '../assets/summary.scss'
 
 const { content } = Astro.props
-const { lang, title, description, publishDate, author, heroImage, permalink, alt } = content
+const { lang, title, description, heroImage, permalink, alt } = content
 ---
 
 <html lang={lang || 'ja'}>
@@ -59,13 +59,13 @@ const { lang, title, description, publishDate, author, heroImage, permalink, alt
     </Header>
     <SectionTitle title="Today Content" subtitle="今日のブログ記事" />
     <BlogArticle>
-      <BlogPost {title} {author} {heroImage} {publishDate} {alt}>
+      <BlogPostTemplate {heroImage} {alt}>
         <div class="article">
           <div class="post-detail">
             <slot />
           </div>
         </div>
-      </BlogPost>
+      </BlogPostTemplate>
     </BlogArticle>
     <Footer>
       © 2021-2024 nekohack inc. some rights reserved.

@@ -1,17 +1,24 @@
 ---
 export interface Props {
-  title: string
-  author: string
-  publishDate: string
   heroImage: string
   alt: string
 }
 
-const { title, author, image, alt } = Astro.props
+const { heroImage, alt } = Astro.props
 ---
 
 <div class="content">
-  {image && <img width="720" height="420" class="hero-image" loading="lazy" src={image} alt={alt} />}
+  {heroImage && (
+    <img
+      width="720"
+      height="420"
+      class="hero-image"
+      decoding="async"
+      loading="lazy"
+      src={heroImage}
+      alt={alt}
+    />
+  )}
   <slot />
 </div>
 
