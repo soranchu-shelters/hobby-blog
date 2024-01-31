@@ -29,6 +29,21 @@ allPosts = allPosts.sort((a, b) => new Date(b.frontmatter.date).valueOf() - new 
         -webkit-user-select: none;
         -ms-user-select: none;
       }
+
+      img {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      @media(max-width: 767px) {
+        img {
+          width: 200px;
+          height: 200px;
+        }
+      }
     </style>
   </head>
 
@@ -36,10 +51,14 @@ allPosts = allPosts.sort((a, b) => new Date(b.frontmatter.date).valueOf() - new 
     <Header>
       <BlogHeader {title} {description} />
     </Header>
-    <SectionTitle title="Latest Gallery" subtitle="最近のお写歩活動" />
+    <SectionTitle title="Hobby Blog" subtitle="ブログ" />
     </div>
     <BlogGrid>
-      {allPosts.map((p) => <BlogPostPreview post={p} />)}
+      {allPosts.map((p) => (
+        <a href={p.url}>
+          <BlogPostPreview imagePath={p.frontmatter.image} title={p.frontmatter.title} />
+        </a>
+      ))}
     </BlogGrid>
     <Footer>
       © 2021-2024 nekohack inc. some rights reserved.

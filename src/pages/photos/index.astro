@@ -1,0 +1,80 @@
+---
+import BlogGrid from '../../components/BlogGrid.astro'
+import BaseHead from '../../components/BaseHead.astro'
+import SectionTitle from '../../components/SectionTitle.astro'
+import Footer from '../../components/Footer.astro'
+import Modal from '../../components/Modal.astro'
+
+let title = 'soratabi.nekohack.me'
+let description = 'The perfect product for your aviation blog.'
+let permalink = 'https://soranchu.ninja/photos'
+
+let photos = await Astro.glob('../../assets/aviation/*.JPG').then((files) => {
+  return files.map(file => file.default)
+})
+---
+
+<html lang="en">
+  <head>
+    <BaseHead {title} {description} {permalink} />
+
+    <style>
+      body {
+        /* rgba(167, 123, 243, 0.1) */
+        background: #000;
+        color: #fff;
+        user-select: none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+      }
+
+      .cover-image-wrapper {
+        padding: 0;
+        margin: 0;
+        cursor: pointer;
+      }
+
+      .cover-image {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      .preview-image {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+      }
+
+      @media(max-width: 767px) {
+        .cover-image {
+          width: 200px;
+          height: 200px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <SectionTitle title="Photo Gallery" subtitle="写真館" />
+    </div>
+    <BlogGrid>
+      {photos.map((p, index) => (
+        <button class="cover-image-wrapper" onclick={`window.dialog${index}.showModal()`}>
+          <img src={p.src} alt="" class="cover-image"/>
+        </button>
+        <Modal id={`dialog${index}`}>
+          <button slot="content">
+            <img src={p.src} alt="" class="preview-image" />
+          </button>
+        </Modal>
+      ))}
+    </BlogGrid>
+    <Footer>
+      © 2021-2024 nekohack inc. some rights reserved.
+    </Footer>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+---
+const { id } = Astro.props
+---
+
+<dialog id={id}>
+  <form method="dialog">
+    <slot name="content" />
+  </form>
+</dialog>
+
+<style>
+dialog {
+  position: fixed;
+  top: 50%;
+	left: 50%;
+  transform: translate(-50%, -50%);
+}
+dialog::backdrop {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.6);
+}
+</style>
