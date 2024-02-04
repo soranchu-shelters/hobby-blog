@@ -7,7 +7,7 @@ import Modal from '../../components/Modal.astro'
 
 let title = 'soratabi.nekohack.me'
 let description = 'The perfect product for your aviation blog.'
-let permalink = 'https://soranchu.ninja/photos'
+let permalink = 'https://soratabi.nekohack.me/photos'
 
 let photos = await Astro.glob('../../assets/aviation/*.JPG').then((files) => {
   return files.map(file => file.default)
