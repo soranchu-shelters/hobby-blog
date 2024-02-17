@@ -38,7 +38,7 @@ image: https://i.imgur.com/ZGHTIfF.jpg
 
 これももしかすると、那覇から搭乗するのを目指していた方でしょう。
 
-![](/assets/img/HND_Gate503.jpg)
+![](/assets/img/20220331/HND.JPG)
 
 ロコン (JA607A) 、スターウォーズ 3 機、政府専用機 2 機の共演。
 
@@ -70,7 +70,7 @@ V 地区にて (昼)
 
 折角ここまで飛んできたなら、何らかのお土産を買っても良かったね。
 
-![](/assets/img/CTS_Gate10.jpg)
+![](/assets/img/20220331/CTS.JPG)
 
 搭乗を暫し待つ、このひとこまをパチり。
 

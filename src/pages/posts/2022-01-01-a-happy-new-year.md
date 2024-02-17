@@ -20,7 +20,7 @@ image: https://i.imgur.com/PmXbtjL.jpg
 
 なお、お隣 12 番ゲートは [初日の出フライト](https://www.jal.co.jp/domtour/hatsuhinode/) (JA13XJ) で、出発直後だった模様。
 
-![](/assets/img/HND_Gate13.jpg)
+![](/assets/img/HND.JPG)
 
 JAL SKY SUITE Ⅲ (77E) で行くフライト。
 
@@ -54,7 +54,7 @@ GE90-94B の燃ゆるが如し。
 
 こちらは取り急ぎ、現像させていただきます。
 
-![](/assets/img/NikonD7500.JPG)
+![](/assets/img/20220101/NikonD7500.JPG)
 
 ファインダーをこうやって晒すのも、珍しいでしょうか。
 
@@ -77,7 +77,7 @@ GE90-94B の燃ゆるが如し。
 
 南アルプス (富士山の北) 周辺を西進。
 
-![](/assets/img/Sunrise2022.JPG)
+![](/assets/img/20220101/Sunrise2022.JPG)
 
 機内はシャッター音に包まれます。
 
@@ -91,7 +91,7 @@ GE90-94B の燃ゆるが如し。
 
 4F に大きな広場がある。
 
-![](/assets/img/FUK_1.JPG)
+![](/assets/img/20220101/FUK_4F.JPG)
 
 機体への目線が近いのも魅力的です。
 
@@ -99,7 +99,7 @@ GE90-94B の燃ゆるが如し。
 
 人の好みにもよります。
 
-![](/assets/img/FUK_2.JPG)
+![](/assets/img/20220101/FUK_3F.JPG)
 
 なお、こちらのデッキは午前順光です。
 

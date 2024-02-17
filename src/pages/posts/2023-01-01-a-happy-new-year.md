@@ -39,7 +39,7 @@ image: https://i.imgur.com/wNUZO3q.jpg
 
 こちら取り急ぎ、現像させていただきました。
 
-![](/assets/img/Sunrise2023.JPG)
+![](/assets/img/20230101/Sunrise2023.JPG)
 
 朝倉 (福岡) 上空。
 

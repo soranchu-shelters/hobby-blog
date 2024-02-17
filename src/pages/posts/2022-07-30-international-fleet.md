@@ -48,11 +48,11 @@ NH13 便として羽田より到着する瞬間を捕捉しました。
 
 羽田 12 番搭乗口。
 
-![](/assets/img/HND_Gate12.jpg)
+![](/assets/img/20220730/HND.JPG)
 
 そして帰路につく、石垣 8 番搭乗口。
 
-![](/assets/img/ISG_Gate8.jpg)
+![](/assets/img/20220730/ISG.JPG)
 
 なお、前便の与那国行は少し遅延して出発したようです。
 
