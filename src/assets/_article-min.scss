@@ -13,39 +13,43 @@
 
   .post-detail {
     h2 {
-      padding: 0.24em 0.48em;
-      margin: 8px 0;
+      padding: 1rem 1.25rem;
+      margin: 1.25rem 0;
       color: #fff;
       border-left: solid 5px #42b883;
     }
 
     h3 {
-      padding: 0.24em 0.48em;
-      margin: 8px 0;
+      padding: 1rem 1.25rem;
+      margin: 1.25rem 0;
       color: #fff;
       border-left: solid 5px #35495e;
     }
 
     h4 {
-      padding: 0.24em 0.48em;
-      margin: 8px 0;
+      padding: 1rem 1.25rem;
+      margin: 1.25rem 0;
       color: #fff;
       border-left: solid 5px #ccc;
     }
 
+    p {
+      margin: 1rem 0;
+    }
+
     img {
-      width: 60%;
-      margin: 0 20%;
+      margin: 0 1.25rem;
       @media (max-width: 767px) {
-        width: 80%;
+        width: 100%;
+        margin: 0;
       }
     }
 
     iframe {
-      width: 58%;
-      margin: 0 21%;
+      margin: 0 1.25rem;
       @media (max-width: 767px) {
-        width: 78%;
+        width: 100%;
+        margin: 0;
       }
     }
   }
