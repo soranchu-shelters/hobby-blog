@@ -1,18 +1,20 @@
 ---
-import BlogGrid from '../components/BlogGrid.astro'
-import BaseHead from '../components/BaseHead.astro'
-import BlogHeader from '../components/BlogHeader.astro'
-import BlogPostPreview from '../components/BlogPostPreview.astro'
-import SectionTitle from '../components/SectionTitle.astro'
-import Header from '../components/Header.astro'
-import Footer from '../components/Footer.astro'
+import BlogGrid from "../components/BlogGrid.astro";
+import BaseHead from "../components/BaseHead.astro";
+import BlogHeader from "../components/BlogHeader.astro";
+import BlogPostPreview from "../components/BlogPostPreview.astro";
+import SectionTitle from "../components/SectionTitle.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 
-let title = 'soratabi.nekohack.me'
-let description = 'The perfect product for your aviation blog.'
-let permalink = 'https://soratabi.nekohack.me/'
+const title = "soratabi.nekohack.me";
+const description = "The perfect product for your aviation blog.";
+const permalink = "https://soratabi.nekohack.me/";
 
-let allPosts = await Astro.glob('./posts/*.md')
-allPosts = allPosts.sort((a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf())
+let allPosts = await Astro.glob("./posts/*.md");
+allPosts = allPosts.sort(
+	(a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf(),
+);
 ---
 
 <html lang="en">

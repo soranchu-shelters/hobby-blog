@@ -1,19 +1,19 @@
 ---
-import { SEO } from 'astro-seo'
+import { SEO } from "astro-seo";
 
 export type Props = {
-  title: string
-  description: string
-  permalink?: string
-  image?: string
-}
+	title: string;
+	description: string;
+	permalink?: string;
+	image?: string;
+};
 
 const {
-  title = 'soratabi.nekohack.me',
-  description,
-  permalink = 'https://soratabi.nekohack.me/',
-  image = 'https://soratabi.nekohack.me/assets/top.jpg',
-} = Astro.props
+	title = "soratabi.nekohack.me",
+	description,
+	permalink = "https://soratabi.nekohack.me/",
+	image = "https://soratabi.nekohack.me/assets/top.jpg",
+} = Astro.props;
 ---
 
 <meta
