@@ -8,7 +8,13 @@
     "dev": "astro dev",
     "build": "astro build",
     "build:feeds": "node --loader ts-node/esm scripts/feeds.mjs",
-    "format:fix": "prettier --write \"**/*.{js,jsx,json,ts,tsx,md,mdx,css,html,yml,yaml,scss,sass}\" --ignore-path .gitignore",
+    "prettier-format": "prettier \"**/*.{js,jsx,json,ts,tsx,md,mdx,css,html,yml,yaml,scss,sass}\" --ignore-path .gitignore",
+    "prettier-format:fix": "prettier --write \"**/*.{js,jsx,json,ts,tsx,md,mdx,css,html,yml,yaml,scss,sass}\" --ignore-path .gitignore",
+    "biome-format": "biome format ./src",
+    "biome-format:fix": "biome format --write ./src",
+    "biome-lint": "biome lint ./src",
+    "biome-lint:fix": "biome lint --apply ./src",
+    "biome-check": "biome check --apply ./src",
     "textlint": "textlint ./src/pages/posts/**",
     "textlint:fix": "textlint ./src/pages/posts/** --fix"
   },
@@ -17,6 +23,7 @@
   },
   "devDependencies": {
     "@astrojs/svelte": "4.0.4",
+    "@biomejs/biome": "1.6.1",
     "astro": "3.6.1",
     "astro-seo": "0.8.0",
     "feed": "4.2.2",

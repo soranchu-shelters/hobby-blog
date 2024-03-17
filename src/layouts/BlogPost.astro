@@ -1,23 +1,23 @@
 ---
-import BlogArticle from '../components/BlogArticle.astro'
-import BaseHead from '../components/BaseHead.astro'
-import BlogHeader from '../components/BlogHeader.astro'
-import { default as BlogPostTemplate } from '../components/BlogPost.astro'
-import SectionTitle from '../components/SectionTitle.astro'
-import Header from '../components/Header.astro'
-import Footer from '../components/Footer.astro'
+import BlogArticle from "../components/BlogArticle.astro";
+import BaseHead from "../components/BaseHead.astro";
+import BlogHeader from "../components/BlogHeader.astro";
+import { default as BlogPostTemplate } from "../components/BlogPost.astro";
+import SectionTitle from "../components/SectionTitle.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 
-import '../assets/_article-min.scss'
+import "../assets/_article-min.scss";
 // import '../assets/lib/customize/_article.scss'
-import '../assets/lib/customize/_twitter.scss'
-import '../assets/lib/_layout.scss'
-import '../assets/player.scss'
-import '../assets/reset.scss'
-import '../assets/section.scss'
-import '../assets/summary.scss'
+import "../assets/lib/customize/_twitter.scss";
+import "../assets/lib/_layout.scss";
+import "../assets/player.scss";
+import "../assets/reset.scss";
+import "../assets/section.scss";
+import "../assets/summary.scss";
 
-const { content } = Astro.props
-const { lang, title, description, heroImage, permalink, alt } = content
+const { content } = Astro.props;
+const { lang, title, description, heroImage, permalink, alt } = content;
 ---
 
 <html lang={lang || 'ja'}>
