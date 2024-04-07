@@ -31,7 +31,7 @@ image: https://i.imgur.com/STmp8mX.jpg
 
 ![](/assets/img/20230819/JA15XJ_3.JPG)
 
-同じく、那覇よりお越し、鬼滅参の機。
+同じく、那覇よりお越し、鬼滅の刃・参の機。
 
 ![](/assets/img/20230819/JA745A.JPG)
 
