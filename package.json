@@ -24,7 +24,6 @@
   "devDependencies": {
     "@astrojs/svelte": "4.0.4",
     "@biomejs/biome": "1.6.1",
-    "@cloudflare/workers-types": "^4.20240423.0",
     "astro": "3.6.1",
     "astro-seo": "0.8.0",
     "feed": "4.2.2",
@@ -45,7 +44,6 @@
     "textlint-rule-spellcheck-tech-word": "5.0.0",
     "to-vfile": "7.2.4",
     "ts-node": "10.9.1",
-    "unified": "10.1.2",
-    "wrangler": "^3.0.0"
+    "unified": "10.1.2"
   }
 }
