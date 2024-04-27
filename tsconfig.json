@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
     "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true,
-    "types": ["@cloudflare/workers-types"]
+    "allowSyntheticDefaultImports": true
   }
 }
