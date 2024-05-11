@@ -31,6 +31,14 @@ NH985 便に JA717A が入りました。
 
 本日は朝から南風運用という、ひじょうに珍しい日。
 
+(CF6 の美しい音をば)
+
+<div class="wrapper">
+  <div class="container">
+    <iframe src="https://www.youtube.com/embed/uSH8rvWwLaM" class="player" title="Boeing767 音" loading="lazy"></iframe>
+  </div>
+</div>
+
 C をエアボーン、左旋回すると昨日に続いて、本日も富士山のお姿が見えました。
 
 ![](/assets/img/20240505/JA627A_1.JPG)
@@ -48,6 +56,18 @@ C をエアボーン、左旋回すると昨日に続いて、本日も富士山
 ![](/assets/img/20240505/JA627A_3.JPG)
 
 ### 千歳 5 番搭乗口
+
+(CF6 の美しい音をば)
+
+<div class="wrapper">
+  <div class="container">
+    <iframe src="https://www.youtube.com/embed/CWDt0mESDr8" class="player" title="Boeing767 音" loading="lazy"></iframe>
+  </div>
+</div>
+
+立山、北アルプスの冠雪は美しい。
+
+![](/assets/img/20240505/tateyama.JPG)
 
 御所、二条城、東海道線がくっきり見えます。
 
