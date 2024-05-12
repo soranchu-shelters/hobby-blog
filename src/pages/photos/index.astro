@@ -60,7 +60,6 @@ const photos = await Astro.glob("../../assets/aviation/*.JPG").then((files) => {
 
   <body>
     <SectionTitle title="Photo Gallery" subtitle="写真館" />
-    </div>
     <BlogGrid>
       {photos.map((p, index) => (
         <button class="cover-image-wrapper" onclick={`window.dialog${index}.showModal()`}>
