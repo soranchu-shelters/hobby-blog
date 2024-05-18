@@ -29,7 +29,7 @@ image: https://i.imgur.com/YCywvqZ.jpg
 
 10 時台に羽田を出るのは千歳のみとのこと、幸いラッキーでございました。
 
-(ロコン & ロコンアローラ お出迎え)
+(ロコン & ロコンアローラお出迎え)
 
 <div class="wrapper">
   <div class="container">
