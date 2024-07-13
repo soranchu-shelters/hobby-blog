@@ -3,7 +3,7 @@ layout: '../../layouts/BlogPost.astro'
 author: jiyuujin
 authorInstagram: soranchu_liz
 category: aviation
-title: SFC 修行 (鹿児島へお立ち寄り)
+title: SFC 修行 (KOJ 乗継)
 type: post
 date: 2024-06-14
 tags:

@@ -3,7 +3,7 @@ layout: '../../layouts/BlogPost.astro'
 author: jiyuujin
 authorInstagram: soranchu_liz
 category: aviation
-title: JGP 修行
+title: JGP 修行 (那覇タッチ)
 type: post
 date: 2023-09-10
 tags:
@@ -13,9 +13,9 @@ tags:
 image: https://i.imgur.com/ZrY2t3h.jpg
 ---
 
-前回の SFC 修行同様 JGP 修行についても、今回は特別に書いてみました。
+前回の SFC 修行同様、今回は特別に書いてみました。
 
-今回のフライトプランは、羽田と那覇を往復します。
+今回のフライトプランは、那覇とのタッチ。
 
 搭乗機材は JA703J です。
 

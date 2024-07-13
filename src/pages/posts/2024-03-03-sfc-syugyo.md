@@ -3,7 +3,7 @@ layout: '../../layouts/BlogPost.astro'
 author: jiyuujin
 authorInstagram: soranchu_liz
 category: aviation
-title: SFC 修行
+title: SFC 修行 (OKA タッチ)
 type: post
 date: 2024-03-03
 tags:
@@ -16,7 +16,7 @@ image: https://i.imgur.com/jYk1n0y.jpg
 
 今回の SFC 修行は、新仕様機の B787 と、国際線仕様機の B767 への搭乗が目玉になります。
 
-今回のフライトプランは、那覇経由福岡行きを往復です。
+今回のフライトプランは、那覇からの福岡タッチ。
 
 搭乗機材は、以下 2 機。
 

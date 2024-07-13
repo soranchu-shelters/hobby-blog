@@ -3,7 +3,7 @@ layout: '../../layouts/BlogPost.astro'
 author: jiyuujin
 authorInstagram: soranchu_liz
 category: aviation
-title: SFC 修行 (那覇 2 往復)
+title: SFC 修行 (那覇 2 タッチ)
 type: post
 date: 2024-05-04
 tags:
@@ -15,7 +15,7 @@ image: https://i.imgur.com/wsH05S4.jpg
 
 今回の SFC 修行は、現代となってはレトロ B777 への搭乗が目玉になります。
 
-今回のフライトプランは、那覇と 2 往復です。
+今回のフライトプランは、那覇との 2 タッチ。
 
 搭乗機材は、以下 1 機。
 
@@ -73,7 +73,7 @@ NH986 便を利用した際に、飛行ルートから少々遠く見えづら�
 
 ### 羽田 59 番搭乗口
 
-2 往復目に突入します。
+2 タッチ目に突入します。
 
 ![](/assets/img/20240504/JA753A_5.JPG)
 
@@ -101,7 +101,7 @@ NH986 便を利用した際に、飛行ルートから少々遠く見えづら�
 
 ![](/assets/img/20240504/JA753A_7.JPG)
 
-ちなみに、たまたま JAL Colorful Dreams Express (JA614J) も、那覇と 2 往復していたようですね。
+ちなみに、たまたま JAL Colorful Dreams Express (JA614J) も、那覇と 2 タッチしていたようですね。
 
 ### 羽田 66 番搭乗口
 

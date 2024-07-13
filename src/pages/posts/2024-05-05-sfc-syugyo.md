@@ -3,7 +3,7 @@ layout: '../../layouts/BlogPost.astro'
 author: jiyuujin
 authorInstagram: soranchu_liz
 category: aviation
-title: SFC 修行 (千歳お立ち寄り)
+title: SFC 修行 (CTS 乗継)
 type: post
 date: 2024-05-05
 tags:
