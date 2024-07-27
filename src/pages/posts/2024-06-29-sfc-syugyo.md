@@ -51,7 +51,7 @@ image: https://i.imgur.com/zxXwRRH.jpg
 
 ### 伊丹 10 番搭乗口 (昼)
 
-6 時間ぶりに
+6 時間ぶりにやってきました。
 
 ![](/assets/img/20240629/JA626A_1.JPG)
 
