@@ -3,15 +3,13 @@ layout: '../../layouts/BlogPost.astro'
 author: jiyuujin
 authorInstagram: soranchu_liz
 category: aviation
-title: Fireworks
+title: 花火撮影 23' (なにわ淀川花火大会)
 type: post
 date: 2023-08-05
 tags:
-  - Boeing787
-  - Boeing777
-  - Boeing
+  - JAL
   - ANA
-image: https://i.imgur.com/cnn1Pz3.jpg
+image: https://i.imgur.com/uoBwOye.jpg
 ---
 
 猛暑厳しい大阪の地 (下河原エアフロントオアシス) より、こんにちは。
@@ -58,6 +56,6 @@ image: https://i.imgur.com/cnn1Pz3.jpg
 - 比較的に着陸機のタキシングがスムーズだった
 - (個人的に) 久しぶりの花火撮影と、やさしい目で見てねと
 
-フィナーレのみ、現像っと。
+フィナーレのみ、現像をば。
 
 ![](/assets/img/20230805/Osaka_9.JPG)
