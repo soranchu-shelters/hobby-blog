@@ -1,9 +1,44 @@
 ---
-export const PUB_ID = import.meta.env.PUB_ID
+const isProd = import.meta.env.PROD
+const PUB_ID = import.meta.env.PUB_ID
+const BANNER_ID = '5919567639'
 ---
 
-<script async src={"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-" + PUB_ID} crossorigin="anonymous" />
-<ins class="adsbygoogle" style="display:block" data-ad-format="autorelaxed" data-ad-client={"ca-pub-" + PUB_ID} data-ad-slot="1234567890" />
-<script is:inline>
-  (adsbygoogle = window.adsbygoogle || []).push({});
+<!-- <script async src={"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=" + PUB_ID} crossorigin="anonymous" /> -->
+<div class='ads-container'>
+  <ins class="adsbygoogle" style="display:block" data-ad-format="autorelaxed" data-ad-client={PUB_ID} data-ad-slot={BANNER_ID} data-full-width-responsive="true" />
+  {
+    isProd ? (
+      <script is:inline data-astro-rerun>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    ) : (
+      <script is:inline data-astro-rerun>
+        window.adsbygoogle = window.adsbygoogle || [];
+        const adBreak = adConfig = function(o) {
+          adsbygoogle.push(o);
+        }
+      </script>
+    )
+  }
+</div>
+<script is:inline data-astro-rerun define:vars={{ isProd, PUB_ID }}>
+  function init() {
+    const adElement = document.querySelector('.ads-container');
+    const observer = new IntersectionObserver(function (entries) {
+      if (entries[0].isIntersecting) {
+        let ad = document.createElement('script');
+        ad.type = 'text/javascript';
+        ad.async = true;
+        ad.src =
+          'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=' + PUB_ID;
+        ad.crossOrigin = 'anonymous';
+        if (!isProd) ad.dataset.adbreakTest='on';
+        document.head.appendChild(ad);
+        observer.disconnect();
+      }
+    })
+    if (adElement) observer.observe(adElement);
+  }
+  init();
 </script>
