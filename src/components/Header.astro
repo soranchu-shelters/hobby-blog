@@ -1,5 +1,6 @@
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
+---
+if (typeof window !== "undefined" && typeof document !== "undefined") {
+	document.addEventListener('DOMContentLoaded', () => {
     const menuButton = document.getElementById('nav-menu')
     menuButton.addEventListener('click', () => {
       [...document.querySelectorAll('.nav-toggle')].forEach((el) => {
@@ -45,7 +46,8 @@
         .forEach((d) => d.classList.add('hidden'))
     })
   })
-</script>
+}
+---
 
 <div class="header">
   <slot />
