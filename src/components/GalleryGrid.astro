@@ -1,0 +1,22 @@
+---
+
+---
+
+<div class="grid-content">
+  <slot />
+</div>
+
+<style>
+  .grid-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 1em;
+  }
+
+  @media(max-width: 767px) {
+    .grid-content {
+      grid-template-columns: repeat(2, 1fr);
+      place-items: center;
+    }
+  }
+</style>

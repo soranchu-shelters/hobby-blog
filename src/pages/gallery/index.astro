@@ -1,5 +1,5 @@
 ---
-import BlogGrid from "../../components/BlogGrid.astro";
+import GalleryGrid from "../../components/GalleryGrid.astro";
 import BaseHead from "../../components/BaseHead.astro";
 import SectionTitle from "../../components/SectionTitle.astro";
 import Footer from "../../components/Footer.astro";
@@ -60,7 +60,7 @@ const photos = await Astro.glob("../../assets/aviation/*.JPG").then((files) => {
 
   <body>
     <SectionTitle title="Photo Gallery" subtitle="写真館" />
-    <BlogGrid>
+    <GalleryGrid>
       {photos.map((p, index) => (
         <button class="cover-image-wrapper" onclick={`window.dialog${index}.showModal()`}>
           <img src={p.src} alt="" class="cover-image"/>
@@ -71,7 +71,7 @@ const photos = await Astro.glob("../../assets/aviation/*.JPG").then((files) => {
           </button>
         </Modal>
       ))}
-    </BlogGrid>
+    </GalleryGrid>
     <Footer>
       © 2021-2024 nekohack inc. some rights reserved.
     </Footer>
