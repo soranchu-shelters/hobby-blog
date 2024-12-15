@@ -60,7 +60,11 @@ allPosts = allPosts.sort(
     <BlogGrid>
       {allPosts.map((p) => (
         <a href={p.url}>
-          <BlogPostPreview imagePath={p.frontmatter.image} title={p.frontmatter.title} />
+          <BlogPostPreview
+            imagePath={p.frontmatter.image}
+            title={p.frontmatter.title}
+            tags={p.frontmatter.tags}
+          />
         </a>
       ))}
     </BlogGrid>
