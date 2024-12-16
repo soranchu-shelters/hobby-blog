@@ -1,15 +1,26 @@
 ---
 import { Image } from "astro:assets";
 
-const { imagePath = "", title = "", tags = [] } = Astro.props;
+const { imagePath = "", imageSize = "small", title = "", tags = [] } = Astro.props;
 ---
 
 <div class="item">
   {imagePath && (
-    <Image width="360" height="210" loading="lazy" src={imagePath} alt="" />
+    <Image
+      width={imageSize === "small" ? 360 : 760}
+      height={imageSize === "small" ? 210 : 435}
+      loading="lazy"
+      src={imagePath}
+      alt=""
+    />
   )}
   {title && (
-    <div class="title">{title}</div>
+    <div
+      class="title"
+      style={`bottom: ${imageSize === "small" ? "20%" : "24%"};`}
+    >
+      {title}
+    </div>
   )}
   {tags.length > 0 && (
     <p class="tags-wrapper">
@@ -41,7 +52,6 @@ const { imagePath = "", title = "", tags = [] } = Astro.props;
     width: 100%;
     padding: 8px 0;
     position: absolute;
-    bottom: 20%;
     background: rgba(0, 0, 0, 0.6);
     color: #fff;
     text-align: left;
