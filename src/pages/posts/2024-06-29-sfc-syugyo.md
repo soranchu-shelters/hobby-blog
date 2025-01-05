@@ -103,4 +103,8 @@ image: https://i.imgur.com/zxXwRRH.jpg
   </div>
 </div>
 
+それぞれの機内食は [下記ブログ](https://soratabi.nekohack.me/posts/2024-06-29-ana-meal) にて。
+
+[ANA's meal](https://soratabi.nekohack.me/posts/2024-06-29-ana-meal)
+
 これにて大方、SFC 修行は完遂。

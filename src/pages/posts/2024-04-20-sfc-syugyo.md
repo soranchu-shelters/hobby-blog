@@ -122,6 +122,10 @@ image: https://i.imgur.com/YCywvqZ.jpg
 
 ![](/assets/img/20240420/B-LNR_2.JPG)
 
+機内食は [下記ブログ](https://soratabi.nekohack.me/posts/2024-04-20-ana-meal) にて。
+
+[ANA's meal](https://soratabi.nekohack.me/posts/2024-04-20-ana-meal)
+
 これにて大方、SFC 修行は完遂。
 
 ブロンズのラインに届く想定でしたが、ぎりぎり届かず。

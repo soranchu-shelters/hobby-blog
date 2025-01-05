@@ -75,3 +75,7 @@ CF6 のうなりは至高。
 NH746 一本後 NH32 を飛んでおり、降機後すぐ 7 番搭乗口付近より捕捉させていただきました。
 
 ![](/assets/img/20240114/JA742A_3.JPG)
+
+機内食は [下記ブログ](https://soratabi.nekohack.me/posts/2024-01-14-ana-meal) にて。
+
+[ANA's meal](https://soratabi.nekohack.me/posts/2024-01-14-ana-meal)

@@ -109,4 +109,8 @@ JA625A お隣のスポットに、JA745A がスポットイン。
 
 ![](/assets/img/20240406/JA745A_3.JPG)
 
+それぞれの機内食は [下記ブログ](https://soratabi.nekohack.me/posts/2024-04-06-ana-meal) にて。
+
+[ANA's meal](https://soratabi.nekohack.me/posts/2024-04-06-ana-meal)
+
 これにて大方、SFC 修行は完遂。

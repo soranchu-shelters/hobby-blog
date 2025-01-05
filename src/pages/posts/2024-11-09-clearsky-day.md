@@ -31,6 +31,10 @@ image: https://i.imgur.com/XuOYgjq.jpg
   </div>
 </div>
 
+機内食は [下記ブログ](https://soratabi.nekohack.me/posts/2024-11-09-ana-meal) にて。
+
+[ANA's meal](https://soratabi.nekohack.me/posts/2024-11-09-ana-meal)
+
 ### ITM に到着
 
 (ITM 着陸)

@@ -81,6 +81,10 @@ C をエアボーン、左旋回すると昨日に続いて、本日も富士山
 
 ![](/assets/img/20240505/JA627A_5.JPG)
 
+機内食は [下記ブログ](https://soratabi.nekohack.me/posts/2024-05-05-ana-meal) にて。
+
+[ANA's meal](https://soratabi.nekohack.me/posts/2024-05-05-ana-meal)
+
 ### 伊丹 11 番搭乗口
 
 お見送りは展望デッキより。

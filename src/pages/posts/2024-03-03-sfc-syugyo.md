@@ -51,6 +51,10 @@ ANA ラウンジ前をタキシングする最中、真横を捕捉させてい�
 
 ![](/assets/img/20240303/JA937A.JPG)
 
+機内食は [下記ブログ](https://soratabi.nekohack.me/posts/2024-03-03-ana-meal) にて。
+
+[ANA's meal](https://soratabi.nekohack.me/posts/2024-03-03-ana-meal)
+
 ### 那覇 34 番搭乗口
 
 本来なら、所定 A321 が入る路線のところ、エンジン問題の影響からかウィングレット付 B767 が特別に入っています。
@@ -112,5 +116,9 @@ Fixed Back Shell シート。
 離陸動画をご確認いただくと、ベタ上がりは明白。
 
 ![](/assets/img/20240303/JA936A_4.JPG)
+
+機内食は [下記ブログ](https://soratabi.nekohack.me/posts/2024-03-03-ana-meal) にて。
+
+[ANA's meal](https://soratabi.nekohack.me/posts/2024-03-03-ana-meal)
 
 これにて大方、SFC 修行は完遂。
