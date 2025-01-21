@@ -27,8 +27,18 @@
         "max": 8
       }
     },
+    "ja-technical-writing/ja-no-successive-word": {
+      "allowOnomatopee": true,
+      "allow": [
+        "し",
+        "しり"
+      ]
+    },
     "ja-technical-writing/max-kanji-continuous-len": {
-      "max": 8
+      "max": 9 /* 大根蟹菊花柚子餡掛, etc */
+    },
+    "ja-technical-writing/max-ten": {
+      "max": 6
     },
     "ja-technical-writing/no-doubled-joshi": false,
     "ja-technical-writing/no-exclamation-question-mark": false,

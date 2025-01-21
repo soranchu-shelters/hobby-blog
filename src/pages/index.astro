@@ -1,23 +1,17 @@
 ---
-import BlogLayout from "../components/BlogLayout.astro";
-import BlogGrid from "../components/BlogGrid.astro";
+import GalleryGrid from "../components/GalleryGrid.astro";
 import BaseHead from "../components/BaseHead.astro";
-import BlogHeader from "../components/BlogHeader.astro";
-import BlogPostPreview from "../components/BlogPostPreview.astro";
 import SectionTitle from "../components/SectionTitle.astro";
-import Introduction from "../components/Introduction.astro";
-import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import Adsense from "../components/Adsense.astro";
+import Modal from "../components/Modal.astro";
 
 const title = "soratabi.nekohack.me";
 const description = "The perfect product for your aviation blog.";
-const permalink = "https://soratabi.nekohack.me/";
+const permalink = "https://soratabi.nekohack.me/photos";
 
-let allPosts = await Astro.glob("./posts/*.md");
-allPosts = allPosts.sort(
-	(a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf(),
-);
+const photos = await Astro.glob("../assets/aviation/*.JPG").then((files) => {
+	return files.map((file) => file.default);
+});
 ---
 
 <html lang="en">
@@ -35,53 +29,43 @@ allPosts = allPosts.sort(
         -ms-user-select: none;
       }
 
-      img {
+      .cover-image-wrapper {
+        padding: 0;
+        margin: 0;
+        cursor: pointer;
+      }
+
+      .cover-image {
         padding: 0;
         margin: 0;
         width: 100%;
+        aspect-ratio: 1;
         object-fit: cover;
         object-position: center;
       }
 
-      @media(max-width: 767px) {
-        img {
-          width: 200px;
-          height: 200px;
-        }
+      .preview-image {
+        padding: 0;
+        margin: 0;
+        width: 100%;
       }
     </style>
   </head>
 
   <body>
-    <Header>
-      <BlogHeader {title} {description} />
-    </Header>
-    <SectionTitle title="Hobby Blog" subtitle="ブログ" />
-    <Introduction />
-    <BlogLayout>
-      {allPosts.slice(0,1).map((p) =>
-        <a href={p.url}>
-          <BlogPostPreview
-            imagePath={p.frontmatter.image}
-            imageSize="large"
-            title={p.frontmatter.title}
-            tags={p.frontmatter.tags}
-          />
-        </a>
-      )}
-    </BlogLayout>
-    <BlogGrid>
-      {allPosts.filter((_, key) => key !== 0).map((p) => (
-        <a href={p.url}>
-          <BlogPostPreview
-            imagePath={p.frontmatter.image}
-            title={p.frontmatter.title}
-            tags={p.frontmatter.tags}
-          />
-        </a>
+    <SectionTitle title="Instagram" subtitle="Photo Gallery" />
+    <GalleryGrid>
+      {photos.map((p, index) => (
+        <button class="cover-image-wrapper" onclick={`window.dialog${index}.showModal()`}>
+          <img src={p.src} alt="" class="cover-image"/>
+        </button>
+        <Modal id={`dialog${index}`}>
+          <button slot="content">
+            <img src={p.src} alt="" class="preview-image" />
+          </button>
+        </Modal>
       ))}
-    </BlogGrid>
-    <Adsense />
+    </GalleryGrid>
     <Footer>
       © 2021-2024 nekohack inc. some rights reserved.
     </Footer>

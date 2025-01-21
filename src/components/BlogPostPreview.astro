@@ -8,7 +8,7 @@ const { imagePath = "", imageSize = "small", title = "", tags = [] } = Astro.pro
   {imagePath && (
     <Image
       width={imageSize === "small" ? 360 : 760}
-      height={imageSize === "small" ? 210 : 435}
+      height={imageSize === "small" ? 360 : 760}
       loading="lazy"
       src={imagePath}
       alt=""

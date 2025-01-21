@@ -1,0 +1,84 @@
+---
+layout: '../../../layouts/BlogPost.astro'
+author: jiyuujin
+authorInstagram: soranchu_liz
+category: aviation
+title: SFC 修行・防衛 (ブロンズ解脱)
+type: post
+date: 2023-10-27
+tags:
+  - Nakano
+  - Koen-ji
+image: https://i.imgur.com/F0EdTe4.jpg
+---
+
+4 年ぶりにとあるイベントのスタッフ業、然りカメラマン業をやってきたので、今回その記録用に書いてみます。
+
+- Nikon 18-140mm
+- Nikon 85mm
+
+## 高円寺に滞在
+
+英気を養う場所は高円寺駅前のホテルメッツ高円寺さん。
+
+※ 現在、駅の改装工事が行われ、深夜 3 時に一瞬停電されます。
+
+![](/assets/img/20231027/Koen-ji_1.JPG)
+
+高円寺駅北口「レイク」で、カメラのピントを調整 (笑)
+
+![](/assets/img/20231027/Koen-ji_5.JPG)
+
+夜の「レイク」も、調整し甲斐があります (笑)
+
+![](/assets/img/20231027/Koen-ji_6.JPG)
+
+### ホテル周辺の風景
+
+高円寺より東へ、中野方面を臨みます。
+
+さらに真東へ目を向け、東京スカイツリーもくっきり。
+
+![](/assets/img/20231027/Koen-ji_2.JPG)
+
+JR 中央線。
+
+![](/assets/img/20231027/Koen-ji_3.JPG)
+
+JR 中央・総武線、諸々。
+
+![](/assets/img/20231027/Koen-ji_4.JPG)
+
+### 防衛、ブロンズ解脱
+
+ブロンズ解脱を 1 年を 2 か月残して迎えることができ、安堵でございます。
+
+ANA 運航便だけで 25 便に搭乗していたとは。
+
+- 2023/01/01 HND - ITM (Boeing767)
+- 2023/02/13 ITM - HND (Boeing787)
+- 2023/02/16 HND - ITM (Boeing777)
+- 2023/04/18 ITM - HND (Boeing777)
+- 2023/04/22 HND - ITM (Boeing777)
+- 2023/04/30 ITM - OKA (Boeing777)
+- 2023/05/01 MMY - OKA (Boeing737)
+- 2023/05/03 HND - ITM (Boeing767)
+- 2023/05/18 ITM - HND (Boeing777)
+- 2023/05/18 HND - OKA (Boeing777)
+- 2023/05/20 OKA - FUK (Airbus321)
+- 2023/05/20 FUK - OKA (Airbus321)
+- 2023/05/22 OKA - HND (Boeing777)
+- 2023/05/22 HND - ITM (Boeing777)
+- 2023/07/25 ITM - OKA (Boeing777)
+- 2023/07/25 OKA - IWK (Boeing737)
+- 2023/07/25 IWK - HND (Boeing737)
+- 2023/07/26 HND - ITM (Boeing777)
+- 2023/08/24 ITM - HND (Boeing777)
+- 2023/08/24 HND - ITM (Boeing787)
+- 2023/09/12 HND - ITM (Boeing777)
+- 2023/09/27 HND - ITM (Boeing777)
+- 2023/09/29 HND - ITM (Boeing787)
+- 2023/10/25 ITM - HND (Boeing777)
+- 2023/10/29 HND - ITM (Boeing787)
+
+2 倍 PP キャンペーンの後押しもなく、防衛できた喜びは感動ひとしお。

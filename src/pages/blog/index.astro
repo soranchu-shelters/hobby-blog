@@ -1,0 +1,89 @@
+---
+import BlogLayout from "../../components/BlogLayout.astro";
+import BlogGrid from "../../components/BlogGrid.astro";
+import BaseHead from "../../components/BaseHead.astro";
+import BlogHeader from "../../components/BlogHeader.astro";
+import BlogPostPreview from "../../components/BlogPostPreview.astro";
+import SectionTitle from "../../components/SectionTitle.astro";
+import Introduction from "../../components/Introduction.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import Adsense from "../../components/Adsense.astro";
+
+const title = "soratabi.nekohack.me";
+const description = "The perfect product for your aviation blog.";
+const permalink = "https://soratabi.nekohack.me/";
+
+let allPosts = await Astro.glob("./p/*.md");
+allPosts = allPosts.sort(
+	(a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf(),
+);
+---
+
+<html lang="en">
+  <head>
+    <BaseHead {title} {description} {permalink} />
+
+    <style>
+      body {
+        /* rgba(167, 123, 243, 0.1) */
+        background: #000;
+        color: #fff;
+        user-select: none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+      }
+
+      img {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      @media(max-width: 767px) {
+        img {
+          width: 200px;
+          height: 200px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <Header>
+      <BlogHeader {title} {description} />
+    </Header>
+    <SectionTitle title="Hobby Blog" subtitle="ブログ" />
+    <Introduction />
+    <BlogLayout>
+      {allPosts.slice(0,1).map((p) =>
+        <a href={p.url}>
+          <BlogPostPreview
+            imagePath={p.frontmatter.image}
+            imageSize="large"
+            title={p.frontmatter.title}
+            tags={p.frontmatter.tags}
+          />
+        </a>
+      )}
+    </BlogLayout>
+    <BlogGrid>
+      {allPosts.filter((_, key) => key !== 0).map((p) => (
+        <a href={p.url}>
+          <BlogPostPreview
+            imagePath={p.frontmatter.image}
+            title={p.frontmatter.title}
+            tags={p.frontmatter.tags}
+          />
+        </a>
+      ))}
+    </BlogGrid>
+    <Adsense />
+    <Footer>
+      © 2021-2024 nekohack inc. some rights reserved.
+    </Footer>
+  </body>
+</html>
