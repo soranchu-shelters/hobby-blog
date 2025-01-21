@@ -15,8 +15,8 @@
     "biome-lint": "biome lint ./src",
     "biome-lint:fix": "biome lint --apply ./src",
     "biome-check": "biome check --apply ./src",
-    "textlint": "textlint ./src/pages/posts/**",
-    "textlint:fix": "textlint ./src/pages/posts/** --fix"
+    "textlint": "textlint ./src/pages/blog/p/**",
+    "textlint:fix": "textlint ./src/pages/blog/p/** --fix"
   },
   "dependencies": {
     "svelte": "4.2.18"
