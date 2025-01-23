@@ -39,8 +39,8 @@ button {
   border-radius: 0;
   -webkit-box-sizing: content-box;
   box-sizing: border-box;
-  -webkit-appearance: button;
-  appearance: button;
+  -webkit-appearance: none;
+  appearance: none;
   cursor: pointer;
   ::-webkit-search-decoration {
     display: none;
