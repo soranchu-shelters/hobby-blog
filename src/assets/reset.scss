@@ -34,7 +34,20 @@ button {
   outline: none;
   font: inherit;
   color: inherit;
-  background: none
+  background: none;
+  /* iOS でのデフォルトスタイルをリセット */
+  border-radius: 0;
+  -webkit-box-sizing: content-box;
+  box-sizing: border-box;
+  -webkit-appearance: button;
+  appearance: button;
+  cursor: pointer;
+  ::-webkit-search-decoration {
+    display: none;
+  }
+  :focus {
+    outline-offset: -2px;
+  }
 }
 a:not([class]) {
   text-decoration-skip-ink: auto;
