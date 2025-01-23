@@ -49,6 +49,14 @@ const photos = await Astro.glob("../assets/aviation/*.JPG").then((files) => {
       .preview-image {
         padding: 0;
         margin: 0;
+        background: none;
+        border-radius: 0;
+        cursor: pointer;
+      }
+
+      .preview-image img {
+        padding: 0;
+        margin: 0;
         width: 100%;
       }
     </style>
@@ -62,8 +70,8 @@ const photos = await Astro.glob("../assets/aviation/*.JPG").then((files) => {
           <img src={p.src} alt="" class="cover-image"/>
         </button>
         <Modal id={`dialog${index}`}>
-          <button slot="content">
-            <img src={p.src} alt="" class="preview-image" />
+          <button slot="content" class="preview-image">
+            <img src={p.src} alt="" />
           </button>
         </Modal>
       ))}
