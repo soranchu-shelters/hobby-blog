@@ -1,11 +1,10 @@
 ---
 import BlogArticle from "../components/BlogArticle.astro";
 import BaseHead from "../components/BaseHead.astro";
-import BlogHeader from "../components/BlogHeader.astro";
+import BlogHeader from "../components/legacy/BlogHeader.astro";
 import { default as BlogPostTemplate } from "../components/BlogPost.astro";
-import SectionTitle from "../components/SectionTitle.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
+import Header from "../components/legacy/Header.astro";
+import { Footer } from "../components/v0/footer.tsx";
 
 import "../assets/_article-min.scss";
 // import '../assets/lib/customize/_article.scss'
@@ -13,6 +12,7 @@ import "../assets/lib/customize/_twitter.scss";
 import "../assets/lib/_layout.scss";
 import "../assets/player.scss";
 import "../assets/base.scss";
+import "../assets/tailwind.scss";
 import "../assets/section.scss";
 import "../assets/summary.scss";
 
@@ -57,7 +57,6 @@ const { lang, title, description, heroImage, permalink, alt, tags } = content;
     <Header>
       <BlogHeader {title} {description} />
     </Header>
-    <SectionTitle title="Today Content" subtitle="今日のブログ記事" />
     <BlogArticle>
       <BlogPostTemplate {heroImage} {alt} {tags}>
         <div class="article">
@@ -67,8 +66,6 @@ const { lang, title, description, heroImage, permalink, alt, tags } = content;
         </div>
       </BlogPostTemplate>
     </BlogArticle>
-    <Footer>
-      © 2021-2024 nekohack inc. some rights reserved.
-    </Footer>
+    <Footer />
   </body>
 </html>

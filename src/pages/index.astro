@@ -1,9 +1,8 @@
 ---
-import GalleryGrid from "../components/GalleryGrid.astro";
 import BaseHead from "../components/BaseHead.astro";
-import SectionTitle from "../components/SectionTitle.astro";
-import Footer from "../components/Footer.astro";
-import Modal from "../components/Modal.astro";
+import { Gallery } from "../components/v0/gallery.tsx";
+import { Header } from "../components/v0/header.tsx";
+import { Footer } from "../components/v0/footer.tsx";
 
 const title = "soratabi.nekohack.me";
 const description = "The perfect product for your aviation blog.";
@@ -63,21 +62,8 @@ const photos = await Astro.glob("../assets/aviation/*.JPG").then((files) => {
   </head>
 
   <body>
-    <SectionTitle title="Instagram" subtitle="Photo Gallery" />
-    <GalleryGrid>
-      {photos.map((p, index) => (
-        <button class="cover-image-wrapper" onclick={`window.dialog${index}.showModal()`}>
-          <img src={p.src} alt="" class="cover-image"/>
-        </button>
-        <Modal id={`dialog${index}`}>
-          <button slot="content" class="preview-image">
-            <img src={p.src} alt="" />
-          </button>
-        </Modal>
-      ))}
-    </GalleryGrid>
-    <Footer>
-      © 2021-2024 nekohack inc. some rights reserved.
-    </Footer>
+    <Header />
+    <Gallery {photos} client:load />
+    <Footer />
   </body>
 </html>
