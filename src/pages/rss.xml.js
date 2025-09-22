@@ -9,6 +9,18 @@ export async function GET(context) {
     title: 'Soratabi Blog',
     description: 'The perfect product for your aviation blog.',
     site: context.site,
-    items: await pagesGlobToRssItems(import.meta.glob('./blog/p/*.{md,mdx}')),
+    items: await Promise.all(
+      Object.entries(import.meta.glob('./blog/p/*.{md,mdx}')).map(async ([path, resolver]) => {
+        const post = await resolver()
+        return {
+          title: post.frontmatter.title,
+          pubDate: new Date(post.frontmatter.date),
+          description: '',
+          category: post.frontmatter.category,
+          tags: post.frontmatter.tags,
+          link: path.replace('./blog/p', '/blog/p').replace(/\.mdx?$/, ''),
+        }
+      }),
+    ),
   })
 }
