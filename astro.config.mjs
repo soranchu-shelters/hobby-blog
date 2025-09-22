@@ -12,6 +12,7 @@ export default defineConfig({
     taillwind(),
     mdx(),
   ],
+  site: 'https://soratabi.nekohack.me',
   legacy: {
     astroFlavoredMarkdown: true,
   },
