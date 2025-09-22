@@ -18,8 +18,8 @@ let feed = new Feed({
   title: 'そらんちゅぐらむ',
   description:
     '技術ブログと別のブログとして、一眼レフ (Nikon) を使った「お写歩」活動を記録しています。',
-  feed_url: 'https://aviation.nekohack.me/feeds.xml',
-  site_url: 'https://aviation.nekohack.me/',
+  feed_url: 'https://soratabi.nekohack.me/feeds.xml',
+  site_url: 'https://soratabi.nekohack.me/',
   copyright: 'nekohack',
   language: 'ja',
 })
@@ -40,8 +40,8 @@ fs.readdir(currentDir, function (err, files) {
                 .replace('\n', '')
               feed.items.push({
                 title: title,
-                id: `https://aviation.nekohack.me/posts/${file.replace('.md', '')}`,
-                link: `https://aviation.nekohack.me/posts/${file.replace('.md', '')}`,
+                id: `https://soratabi.nekohack.me/posts/${file.replace('.md', '')}`,
+                link: `https://soratabi.nekohack.me/posts/${file.replace('.md', '')}`,
                 author: [
                   {
                     name: 'jiyuujin',
