@@ -3,7 +3,7 @@ layout: '../../../layouts/BlogPost.astro'
 author: jiyuujin
 authorInstagram: soranchu_liz
 category: aviation
-title: [プラチナ解脱] SFC 修行
+title: '[プラチナ解脱] SFC 修行'
 type: post
 date: 2024-07-01
 tags:
